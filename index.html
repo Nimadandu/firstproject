@@ -3,19 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Taplejung Restaurant</title>
     <link rel="stylesheet" href="./style.css">
-<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
 <body>
+
+    <!-- Header -->
     <header class="navbar">
         <div class="container">
-            <img src="./image/ChatGPT Image May 23, 2025, 12_10_31 PM.png" alt="" class="logos">
-            
+            <img src="./image/ChatGPT Image May 23, 2025, 12_10_31 PM.png" alt="Logo" class="logos">
             <nav class="nav-links">
                 <ul>
                     <li><a href="./index.html">Home</a></li>
                     <li><a href="#about">About</a></li>
+<<<<<<< HEAD
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+=======
                     <li><a href="#skills">Menu</a></li>
                     <li><a href="#projects">Services</a></li>
                     <li><a href="./contact.html">Contact</a></li>
@@ -24,6 +33,7 @@
             <div class="welcomediv">
 
             </div>
+>>>>>>> 36f92b7171a407fcfd99a4789d9cc3aa5c40ad3a
             <div class="hamburger">
                 <div class="bar"></div>
                 <div class="bar"></div>
@@ -32,35 +42,56 @@
         </div>
     </header>
 
-   
-   <div class="about" >
-    <div class="aboutimage">
-        <img src="./image/resturant.png" alt="">
-    </div>
-    <div class="description">
-          <h2 class="heading2">.... About Us ....</h2>
-          <p class="welcomepara">Welcome to  Resturant Taplejung</p>
-          <br>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, iste.</p>
-        <button type="button">Read More</button>
-    </div>
-    <div>
-    </div>
-   </div>
-
-<h3 class="servicediv">---Services---</h3>
-   <div class="Service">
-    <div>
-        <i class="fa fa-truck"></i>
-        <p class="heading">Home Delivery</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam voluptates nihil temporibus, rerum at 
-            dolorum perspiciatis cum culpa suscipit reprehenderit.</p>
-    </div>
-    <div>
-        <i class="fa fa-utensils"></i>
-        <p class="heading">Catering Service</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, non?</p>
+    <!-- Hero -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Taplejung Restaurant</h1>
+            <p>Authentic Taste, Friendly Service</p>
+            <a href="#services" class="btn">Explore Menu</a>
         </div>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+        <div class="aboutimage">
+            <img src="./image/resturant.png" alt="About Image">
+        </div>
+        <div class="description">
+            <h2 class="heading2">.... About Us ....</h2>
+            <p class="welcomepara">Welcome to Taplejung Restaurant</p>
+            <p>We serve delicious local and international cuisine made with fresh ingredients. Visit us to enjoy great food in a warm atmosphere.</p>
+            <button class="btn">Read More</button>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services">
+        <h3 class="servicediv">--- Our Services ---</h3>
+        <div class="Service">
+            <div>
+                <i class="fa fa-truck"></i>
+                <p class="heading">Home Delivery</p>
+                <p>Get your food delivered fast and fresh right to your door.</p>
+            </div>
+            <div>
+                <i class="fa fa-utensils"></i>
+                <p class="heading">Catering</p>
+                <p>Perfect for parties, weddings, and corporate events.</p>
+            </div>
+            <div>
+                <i class='fas fa-hot-tub'></i>
+                <p class="heading">Private Rooms</p>
+                <p>Reserve a cozy space for meetings or special occasions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Taplejung Restaurant. All rights reserved.</p>
+    </footer>
+
+    <script src="./script.js"></script>
     <div>       
          <i class='fas fa-hot-tub' style='font-size:50px'></i>   
          <p class="heading">Meeting Room</p>
