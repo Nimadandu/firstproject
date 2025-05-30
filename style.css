@@ -294,6 +294,7 @@ margin: 30px;
   .footer ul li a{
     color: white;
     text-decoration: none;
+    /* padding: 40px; */
   }
   .footer ul{
     list-style: none;
@@ -301,3 +302,4 @@ margin: 30px;
   .heading1{
     color: orange;
   }
+  
