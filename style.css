@@ -2,7 +2,6 @@
 * {
     margin: 0;
     padding: 0;
-    /* overflow: hidden; */
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -176,7 +175,20 @@
     height: 400px;
     width: 400px;
     margin-left: 40px;
+    /* animation-name: imageani;
+    animation-duration: 12s; */
+    /* scale: 10s; */
+    /* animation-timing-function: ease-in-out; */
+    /* animation-iteration-count: infinite; */
 }
+/* @keyframes imageani{
+    form{
+
+    }
+    to{
+        transform: rotate(360deg);
+    }
+} */
 .heading2{
     color: orange;
 }
@@ -227,3 +239,21 @@ margin: 30px;
     color: #2c3e50;
     font-size:30px ;
 }
+
+/* .autoshowclass{
+    animation-name: autoShowAnimation;
+    animation-timeline:view() ;
+}
+@keyframes autoShowAnimation{
+    from{
+        opacity: 0;
+        transform: translateY(200px) scale(0.3);
+    
+        
+    }
+    to{
+        opacity: 0;
+        transform: translateY(0) scale(1);
+    }
+}
+  */
