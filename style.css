@@ -89,7 +89,7 @@ html {
 
 /* home  */
 .hero {
-    background: url('./image/resturant.png') no-repeat top center/cover;
+    background: url('./image/pexels-arabiclogos-453201.jpg') no-repeat top center/cover;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -422,7 +422,7 @@ margin: 30px;
   .footer ul li a{
     color: white;
     text-decoration: none;
-    /* padding: 40px; */
+    
   }
   .footer ul{
     list-style: none;
