@@ -393,6 +393,7 @@ margin: 30px;
   .review{
     /* border: 2px solid black; */
     display: flex;
+    flex-wrap: wrap;
     gap: 100px;
     padding: 40px;
     justify-content: center;
