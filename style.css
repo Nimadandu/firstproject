@@ -302,4 +302,10 @@ margin: 30px;
   .heading1{
     color: orange;
   }
-  
+  i{
+    padding: 10px;
+    font-size: 20px;
+  }
+  ul{
+    margin-top: 20px;
+  }
