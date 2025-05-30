@@ -204,7 +204,7 @@
     color: white;
     border-radius: 7%;
 }
-<<<<<<< HEAD
+
 .navbar {
     background-color: #3e2723;
     color: white;
@@ -227,7 +227,7 @@
 .containers {
     padding-top: 80px;
     margin-top: 0;
-=======
+}
 .Service{
     display: flex;
     flex-wrap: wrap;
@@ -262,7 +262,7 @@ margin: 30px;
 .heading{
     color: #2c3e50;
     font-size:30px ;
->>>>>>> 09caee93043d8aee370184ba04f2d7cc4459f19f
+
 }
 
 /* .autoshowclass{
