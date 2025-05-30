@@ -1,27 +1,20 @@
-/* General styles */
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* .container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
+html {
+    scroll-behavior: smooth;
 }
-.logos{
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-} */
 
-/* Navbar styles */
+/* navbar  */
 .navbar {
-    background-color: #2c3e50;
+    background-color: #3e2723;
     color: white;
-    padding: 1.5rem 0;
+    padding: 0.8rem 0;
     position: fixed;
     width: 100%;
     top: 0;
@@ -33,14 +26,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 20px;
 }
 
-/* .logo {
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: white;
-    text-decoration: none;
-} */
+.logos {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
 
 .nav-links ul {
     display: flex;
@@ -80,7 +73,7 @@
     width: 100%;
 }
 
-/* Hamburger menu (mobile) */
+/* Hamburger Menu */
 .hamburger {
     display: none;
     cursor: pointer;
@@ -94,12 +87,144 @@
     transition: all 0.3s ease;
 }
 
-/* Mobile responsiveness */
+/* home  */
+.hero {
+    background: url('./image/resturant.png') no-repeat top center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 12px;
+}
+
+/* Button */
+.btn {
+    background-color: orange;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn:hover {
+    background-color: #e67e22;
+}
+
+/* about */
+.about {
+    display: flex;
+    margin-top: 20%;
+    gap: 60px;
+    align-items: center;
+}
+
+.aboutimage img {
+    height: 400px;
+    width: 400px;
+    margin-left: 40px;
+    border-radius: 10px;
+}
+
+.heading2 {
+    color: orange;
+}
+
+.welcomepara {
+    margin-top: 30px;
+    color: #2c3e50;
+    font-size: 40px;
+}
+
+/* menu and service  */
+.servicediv {
+    text-align: center;
+    font-size: 30px;
+    color: orange;
+    margin-top: 40px;
+}
+
+.Service {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.Service div {
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+    padding: 30px;
+    height: 300px;
+    width: 300px;
+    margin: 30px;
+    background-color: white;
+    transition: background-color 0.3s ease;
+}
+
+.Service div:hover {
+    background-color: orange;
+}
+
+.Service i {
+    font-size: 50px;
+    color: black;
+}
+
+.heading {
+    color: #2c3e50;
+    font-size: 30px;
+}
+
+/* contact  */
+.contact-form {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    max-width: 500px;
+    margin: auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* footer */
+footer {
+    background-color: #3e2723;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* responsive style  */
 @media (max-width: 650px) {
     .hamburger {
         display: block;
     }
-    
+
     .nav-links {
         position: absolute;
         top: 80px;
@@ -109,176 +234,38 @@
         transition: left 0.5s ease;
         padding: 1rem 0;
     }
-    
+
     .nav-links.active {
         left: 0;
     }
-    
+
     .nav-links ul {
         flex-direction: column;
         align-items: center;
     }
-    
+
     .nav-links li {
         margin: 1rem 0;
     }
-    
-    /* Animate hamburger to X */
+
     .hamburger.active .bar:nth-child(1) {
         transform: translateY(8px) rotate(45deg);
     }
-    
+
     .hamburger.active .bar:nth-child(2) {
         opacity: 0;
     }
-    
+
     .hamburger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
-}
 
-
-
-.images img{
-    border-radius: 50%;
-    height: 400px;
-    width: 400px;
-    margin-top: 20px;
-    margin-right: 20px;
-    animation-duration: 0.5s;
-     transition-duration: 10s;
-/* animation-name: imageanimation; */
-    /* animation-iteration-count: infinite;  */
-}
-@keyframes imageanimation{
-    from{}
-    to{
-        transform: rotate(360deg);
-    }
-}
-.button{
-    background-color: orange;
-}
-.about{
-    display: flex;
-    margin-top: 20%;
-    gap: 60px;
-    align-items: center;
-
-}
-@media(max-width:650px){
-    .about{
+    .about {
         flex-direction: column;
+        text-align: center;
+    }
+
+    .aboutimage img {
+        margin: 0 auto;
     }
 }
-.aboutimage img{
-    height: 400px;
-    width: 400px;
-    margin-left: 40px;
-    /* animation-name: imageani;
-    animation-duration: 12s; */
-    /* scale: 10s; */
-    /* animation-timing-function: ease-in-out; */
-    /* animation-iteration-count: infinite; */
-}
-/* @keyframes imageani{
-    form{
-
-    }
-    to{
-        transform: rotate(360deg);
-    }
-} */
-.heading2{
-    color: orange;
-}
-
-.welcomepara{
-    margin-top: 30px;
-    color: #2c3e50;
-    font-size: 40px;
-}
-.button{
-    padding: 10px;
-    width: 20%;
-    color: white;
-    border-radius: 7%;
-}
-
-.navbar {
-    background-color: #3e2723;
-    color: white;
-    padding: 0.8rem 0;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.logos {
-    height: 60px;
-    width: 60px;
-    border-radius: 50%;
-}
-.navbar .container {
-    padding: 0 20px;
-}
-.containers {
-    padding-top: 80px;
-    margin-top: 0;
-}
-.Service{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.Service div{
-/* background-color: #2c3e50; */
-/* border: 2px solid black; */
-border-radius:10px ;
-box-shadow: 0 0 10px black;
-padding: 30px;
-height: 300px;
-width: 300px;
-margin: 30px;
-}
-.servicediv{
-    text-align: center;
-    font-size: 30px;
-    color: orange;
-}
-.Service i{
-    
-    font-size: 50px;
-    /* color:#2c3e50; */
-    color: black;
-}
-.Service div:hover{
-    background-color: orange;
-
-}
-
-.heading{
-    color: #2c3e50;
-    font-size:30px ;
-
-}
-
-/* .autoshowclass{
-    animation-name: autoShowAnimation;
-    animation-timeline:view() ;
-}
-@keyframes autoShowAnimation{
-    from{
-        opacity: 0;
-        transform: translateY(200px) scale(0.3);
-    
-        
-    }
-    to{
-        opacity: 0;
-        transform: translateY(0) scale(1);
-    }
-}
-  */
