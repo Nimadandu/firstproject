@@ -206,7 +206,7 @@
 }
 
 .navbar {
-    background-color: #3e2723;
+    background-color: #0f172b;
     color: white;
     padding: 0.8rem 0;
     position: fixed;
@@ -282,3 +282,22 @@ margin: 30px;
     }
 }
   */
+  .footer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+    justify-content: center;
+    background-color: #0f172b;
+    color: white;
+    padding: 20px;
+  }
+  .footer ul li a{
+    color: white;
+    text-decoration: none;
+  }
+  .footer ul{
+    list-style: none;
+  }
+  .heading1{
+    color: orange;
+  }
