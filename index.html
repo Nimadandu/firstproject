@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="./style.css">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
 </head>
 <body>
 
@@ -16,7 +18,7 @@
             <img src="./image/ChatGPT Image May 23, 2025, 12_10_31 PM.png" alt="Logo" class="logos">
             <nav class="nav-links">
                 <ul>
-                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
 
                     <li><a href="#menu">Menu</a></li>
@@ -24,7 +26,7 @@
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
-            </div>
+            
             <div class="hamburger">
                 <div class="bar"></div>
                 <div class="bar"></div>
@@ -77,9 +79,8 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    
-   </div>
+<!-- menu -->
+ 
    
 <h1 class="reviewhead">....Reviews....</h1>
 <h1 class="clienthead">Our clients says!!!</h1>
@@ -117,7 +118,7 @@
                     <h1 class="heading1">Contact--</h1>
                     <ul>
                    <li> <i class="fa fa-location-dot"> </i> 123 street,Newroad</li>
-                   <li><i class="fa fa-phone"> </i>  9824093450</li>
+                   <li><i class="fa fa-phone"> </i> 9824093450</li>
                    <li><i class="fa fa-envelope"> </i>  restro04@gmail.com</li>
                    <i class="fa-brands fa-facebook"></i>
                    <i class="fa-brands fa-youtube"></i>
@@ -134,9 +135,13 @@
                         <li>8AM-10PM</li>
                     </ul>
                 </div>
+
+  <div id="map" style="width: 400px; height: 300px"></div>
+                
                 
             
    </footer>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
    <script src="./script.js"></script>
 </body>
 </html>
