@@ -442,3 +442,10 @@ i {
       }
 
 
+.copyright{
+    background-color:#0f172b;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+}
