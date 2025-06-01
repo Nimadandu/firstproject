@@ -48,4 +48,8 @@ function type(){
         setTimeout(type,150);
     }
 }
+<<<<<<< HEAD
 type();
+=======
+type();
+>>>>>>> 702d1fe8c2ef689669d96b09342464329adc4050
