@@ -16,6 +16,8 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+
+//map js
   const map = L.map("map").setView([27.7172, 85.324], 12); // Kathmandu
 
 
@@ -33,3 +35,17 @@ document.addEventListener('DOMContentLoaded', function() {
         .bindPopup("Newroad")
 
         .openPopup();
+
+
+//welcome js
+ const text ="Welcome to Taplejung Restaurant ";
+const typeText = document.getElementById('typed-text');
+let index = 0;
+function type(){
+    if(index < text.length){
+        typeText.textContent += text.charAt(index);
+        index++;
+        setTimeout(type,150);
+    }
+}
+type();

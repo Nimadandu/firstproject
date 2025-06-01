@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
 }
 
 html {
@@ -126,7 +127,7 @@ html {
 /* About Section */
 .about {
     display: flex;
-    margin-top: 20%;
+    margin-top: 10%;
     gap: 60px;
     align-items: center;
 }
@@ -172,13 +173,21 @@ html {
 
 .Service div:hover {
     background-color: orange;
+    cursor: pointer;
 }
 
 .Service i {
     font-size: 50px;
     color: black;
 }
-
+.servicebutton{
+    margin-top: 30px;
+    padding:5px;
+    font-size: 15px;
+    width: 100px;
+    background-color: #e67e22;
+    color: white;
+}
 .heading {
     color: #2c3e50;
     font-size: 30px;
@@ -209,6 +218,7 @@ html {
     height: 100px;
     width: 100px;
     border-radius: 50%;
+    box-shadow: 0 0 10px black;
 }
 
 .review-card {
@@ -232,12 +242,17 @@ html {
     color: white;
     text-decoration: none;
 }
-
+.footer ul li a:hover{
+    color: #3498db;
+}
 .footer ul {
     list-style: none;
     margin-top: 20px;
 }
-
+#socialmedia:hover{
+    border: 2px solid black;
+    cursor: pointer;
+}
 .heading1 {
     color: orange;
 }
@@ -305,7 +320,7 @@ i {
       }
 
 
-      .servicediv,.ani,.reviewhead,.aboutimage,.description,.clienthead,.review-card  {
+      #scrollanimation {
         animation: autoShowAnimation both;
         animation-timeline: view(70% 5%);
       }
