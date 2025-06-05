@@ -146,52 +146,75 @@ html {
 
 
 /* Services Section */
-.servicediv {
-    text-align: center;
-    font-size: 30px;
-    color: orange;
-    margin-top: 40px;
-}
 
-.Service {
+.services-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 20px 0;
+    gap: 30px;
+    padding: 40px 20px;
+    background-color: #fdfdfd;
 }
 
-.Service div {
-    border-radius: 10px;
-    box-shadow: 0 0 10px black;
+.service-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: center;
     padding: 30px;
-    height: 300px;
     width: 300px;
-    margin: 30px;
-    background-color: white;
-    transition: background-color 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.Service div:hover {
-    background-color: orange;
-    cursor: pointer;
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
 }
 
-.Service i {
+.service-icon {
     font-size: 50px;
-    color: black;
+    color: orange;
+    margin-bottom: 20px;
 }
-.servicebutton{
-    margin-top: 30px;
-    padding:5px;
-    font-size: 15px;
-    width: 100px;
-    background-color: #e67e22;
-    color: white;
-}
-.heading {
+
+.service-card h3 {
+    font-size: 1.5rem;
     color: #2c3e50;
-    font-size: 30px;
+    margin-bottom: 10px;
 }
+
+.service-card p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+#services {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+#services .section-subtitle,
+#services .section-title {
+    margin: 0 auto 20px;
+}
+
+/* Better Button */
+.btn-modern {
+    padding: 12px 25px;
+    background-color: orange;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.btn-modern:hover {
+    background-color: #e67e22;
+    transform: scale(1.05);
+}
+
 
 /* Reviews Section */
 .reviewhead {
@@ -231,11 +254,13 @@ html {
 .footer {
     display: flex;
     flex-wrap: wrap;
-    gap: 80px;
+    gap: 40px;
     justify-content: center;
     background-color: #0f172b;
     color: white;
-    padding: 20px;
+    /* padding: 20px; */
+    padding: 40px 20px; /* Adjusted padding */
+    margin-top: 40px;
 }
 
 .footer ul li a {
@@ -313,14 +338,12 @@ i {
         margin: 0 auto;
     }
 }
- map {
-
-        height: 100vh;
-
-      }
-
-      
-      /* Reviews Section */
+ #map {
+        width: 300px; 
+        height: 200px;
+        margin-top: 20px;
+    }
+/* Reviews Section */
 .reviews-section {
     padding: 80px 20px;
     background-color: #f9f9f9;
@@ -440,12 +463,12 @@ i {
         }
 
       }
-
-
-.copyright{
-    background-color:#0f172b;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    font-size: 20px;
-}
+      .footer-line {
+        border: none;
+        height: 1px;
+        background-color: rgba(255, 255, 255, 0.2);
+        margin: 40px auto 0;
+        width: 90%;
+    }
+    
+    
