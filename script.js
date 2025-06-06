@@ -52,3 +52,26 @@ function type(){
 type();
 
 type();
+
+// menu 
+document.addEventListener('DOMContentLoaded', function() {
+    const categoryBtns = document.querySelectorAll('.category-btn');
+    const menuItems = document.querySelectorAll('.menu-category');
+    
+    categoryBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+            
+            categoryBtns.forEach(b => b.classList.remove('active'));
+          
+            this.classList.add('active');
+             const category = this.dataset.category;
+            menuItems.forEach(item => {
+                if (category === 'all' || item.id === category) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        });
+    });
+});
