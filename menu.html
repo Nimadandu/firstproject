@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Taplejung Restaurant</title>
+    <title>Menu</title>
     <link rel="stylesheet" href="./style.css">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
@@ -12,8 +12,7 @@
 </head>
 <body>
 
-    <!-- Header -->
-    <header class="navbar">
+ <header class="navbar">
         <div class="container">
             <img src="./image/ChatGPT Image May 23, 2025, 12_10_31 PM.png" alt="Logo" class="logos">
             <nav class="nav-links">
@@ -33,67 +32,23 @@
             </div>
         </div>
     </header>
-
-    <!-- Hero -->
+ <!-- Hero -->
     <section id="home" class="hero">
-        <div class="hero-content">
-            <h1 id="typed-text"></h1>
-            <p>Authentic Taste, Friendly Service</p>
-            <a href="#menu" class="btn">Explore Menu</a>
+        <div>
+            
+            <p class="menupara">Our Menu</p>
+            <!-- <a href="#menu" class="btn">Explore Menu</a> -->
         </div>
     </section>
-
-    <!-- About -->
-    <section class="about" id="about">
-        <div class="aboutimage" id="scrollanimation">
-            <img src="./image/pexels-arabiclogos-453201.jpg" alt="About Image">
-        </div>
-        <div class="description" id="scrollanimation">
-            <h2 class="heading2" >.... About Us ....</h2>
-            <p class="welcomepara" >Welcome to Taplejung Restaurant</p>
-            <p >We serve delicious local and international cuisine made with fresh ingredients. Visit us to enjoy great food in a warm atmosphere.</p>
-
-            <button class="btn">Read More</button> 
-
-        </div>
-    </section>
-
-    <section id="services">
-        <h3 class="section-subtitle" id="scrollanimation">--- Our Services ---</h3>
-        <h2 class="section-title" id="scrollanimation">What We Offer</h2>
-        <div class="services-container">
-            <div class="service-card" id="scrollanimation">
-                <i class="fa fa-truck service-icon"></i>
-                <h3>Home Delivery</h3>
-                <p>Get your food delivered fast and fresh right to your door.</p>
-                <a href="./order.html" class="btn-modern">Order Now</a>
-            </div>
-            <div class="service-card" id="scrollanimation">
-                <i class="fa fa-utensils service-icon"></i>
-                <h3>Catering</h3>
-                <p>Perfect for parties, weddings, and corporate events.</p>
-                <a href="#" class="btn-modern">Inquire</a>
-            </div>
-            <div class="service-card" id="scrollanimation">
-                <i class="fas fa-hot-tub service-icon"></i>
-                <h3>Private Rooms</h3>
-                <p>Reserve a cozy space for meetings or special occasions.</p>
-                <a href="#" class="btn-modern">Book Now</a>
-            </div>
-        </div>
-    </section>
-    
-
-<!-- menu -->
-<section id="menu" class="menu-section">
+    <section id="menu" class="menu-section">
     <div class="menu-header">
-        <h3 class="section-subtitle" id="scrollanimation">--- Our Specialties ---</h3>
-        <h2 class="section-title" id="scrollanimation">Delicious Menu</h2>
-        <div class="menu-categories" id="scrollanimation">
+        <h3 class="section-subtitle" >--- Our Specialties ---</h3>
+        <h2 class="section-title" >Delicious Menu</h2>
+        <div class="menu-categories">
             <button class="category-btn active" data-category="all">All Items</button>
             <button class="category-btn" data-category="starters">Starters</button>
             <button class="category-btn" data-category="mains">Main Courses</button>
-            <button class="category-btn" data-category="drinks">Drinks</button>
+            <button class="category-btn" data-category="drinks"><i class="fa fa-mug-hot"></i>Drinks</button>
             <button class="category-btn" data-category="desserts">Desserts</button>
         </div>
     </div>
@@ -340,71 +295,7 @@
         </div>
     </div>
 </section>
- 
-<!-- Reviews Section -->
-<section class="reviews-section">
-    <h2 class="section-subtitle" id="scrollanimation">.... Customer Feedback ....</h2>
-    <h1 class="section-title" id="scrollanimation">What Our Customers Say</h1>
-    <div class="reviews-container" id="scrollanimation">
-        <div class="review-card">
-            <div class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
-            </div>
-            <p class="review-text">"The food was absolutely delicious.The momo dumplings were the best I've ever had."</p>
-            <div class="reviewer">
-                <img src="./image/aakash.png" alt="Customer photo" class="reviewer-photo"id="scrollanimation">
-                <div class="reviewer-info">
-                    <p class="reviewer-name">Aakash Shrestha</p>
-                    <p class="reviewer-location">Kathmandu, Nepal</p>
-                </div>
-            </div>
-        </div>
-        
-        <div class="review-card">
-            <div class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-            </div>
-            <p class="review-text">"The Sukuti Tarkari is perfect for chilly evenings. Highly recommended!"</p>
-            <div class="reviewer">
-                <img src="./image/saroj.png" alt="Customer photo" class="reviewer-photo">
-                <div class="reviewer-info">
-                    <p class="reviewer-name">Saroj Tamang</p>
-                    <p class="reviewer-location">Pani Pokhari, Nepal</p>
-                </div>
-            </div>
-        </div>
-        
-        <div class="review-card">
-            <div class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="far fa-star"></i>
-            </div>
-            <p class="review-text">"Great atmosphere and wonderful service. The Chocolate pie was crispy on the outside and soft inside and it was quite Delicious."</p>
-            <div class="reviewer">
-                <img src="./image/image.png" alt="Customer photo" class="reviewer-photo">
-                <div class="reviewer-info">
-                    <p class="reviewer-name">Sabina Praja</p>
-                    <p class="reviewer-location">Bishal-Nagar, Nepal</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-   
-
-<!--  foooter --> 
-   <footer class="footer">
+  <footer class="footer">
     <div class="company">
         <h1 class="heading1">Quick Links</h1>
     <ul>
@@ -443,8 +334,7 @@
   <p>&copy; Tech Army. All Right Reserved</p>
                 
    </footer>
-   
-    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
    <script src="./script.js"></script>
 </body>
 </html>

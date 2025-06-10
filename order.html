@@ -3,24 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-   <link rel="stylesheet" href="./style.css">
+    <title>Order</title>
+    <link rel="stylesheet" href="./style.css">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
         <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-
 </head>
 <body>
-     <header class="navbar">
+    <header class="navbar">
         <div class="container">
-            <img src="./image/ChatGPT Image May 23, 2025, 12_10_31 PM.png" alt="" class="logos">
-            
+            <img src="./image/ChatGPT Image May 23, 2025, 12_10_31 PM.png" alt="Logo" class="logos">
             <nav class="nav-links">
                 <ul>
                     <li><a href="./index.html">Home</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="./menu.html">Menu</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#menu">Menu</a></li>
                     <li><a href="./contact.html">Contact</a></li>
                 </ul>
             </nav>
@@ -32,42 +30,38 @@
             </div>
         </div>
     </header>
- <section id="home" class="hero">
-        <div >
-            <h1></h1>
-            <p id="contactus" >Contact Us</p>
-            <!-- <a href="#menu" class="btn">Explore Menu</a> -->
-        </div>
-    </section>
-    
-<h2 id="contacthead" id="scrollanimation">---Contact us---</h2>
-<h1 id="contacthead" id="scrollanimation">Contact For Any Query</h1>
-
-
-<div class="containers" id="scrollanimation">
+   
+    <div class="containers">
   <form action="submit_order.php" method="POST">
-    <!-- <h2></h2> -->
+    <h2>Order Your Food</h2>
 
     <label for="name">Your Name:</label>
     <input type="text" id="name" name="name" required>
 
-    <label for="phone">Your Email:</label>
+    <label for="phone">Phone Number:</label>
     <input type="tel" id="phone" name="phone" required>
 
-    <label for="address">Subject:</label>
-    <input type="text" placeholder="subject">
-
-    <label for="message">Message:</label>
+    <label for="address">Delivery Address:</label>
     <textarea id="address" name="address" rows="3" required></textarea>
 
+    <label for="food">Select Food Item:</label>
+    <select id="food" name="food" required>
+      <option value="">-- Choose an item --</option>
+      <option value="burger">Burger</option>
+      <option value="pizza">Pizza</option>
+      <option value="momo">Momo</option>
+      <option value="noodles">Noodles</option>
+    </select>
+
+    <label for="quantity">Quantity:</label>
+    <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+
     
+
     <button type="submit" class="buttons">Place Order</button>
   </form>
-
 </div>
-  
-</body>
-  <footer class="footer">
+<footer class="footer">
     <div class="company">
         <h1 class="heading1">Quick Links</h1>
     <ul>
@@ -86,9 +80,9 @@
                    <li><i class="fa fa-phone"> </i> 9824093450</li>
                    <li><i class="fa fa-envelope"> </i>  restro04@gmail.com</li>
                    <a href="#"><i class="fa-brands fa-facebook" id="socialmedia"></i></a>
-                   <a href=""><i class="fa-brands fa-youtube" id="socialmedia"></i></a>
-                   <a href=""><i class="fa-brands fa-linkedin" id="socialmedia"></i></a>
-                   <a href=""><i class="fa-brands fa-instagram" id="socialmedia"></i></a>
+                   <a href="#"><i class="fa-brands fa-youtube" id="socialmedia"></i></a>
+                   <a href="#"><i class="fa-brands fa-linkedin" id="socialmedia"></i></a>
+                   <a href="#"><i class="fa-brands fa-instagram" id="socialmedia"></i></a>
 
                     </ul>
                 </div>
@@ -106,7 +100,8 @@
   <p>&copy; Tech Army. All Right Reserved</p>
                 
    </footer>
-   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+   
+ <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
    <script src="./script.js"></script>
 </body>
 </html>
