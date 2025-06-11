@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Order</title>
+    <title>About Us</title>
     <link rel="stylesheet" href="./style.css">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
         <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
 </head>
 <body>
+     <!-- Header -->
     <header class="navbar">
         <div class="container">
             <img src="./image/ChatGPT Image May 23, 2025, 12_10_31 PM.png" alt="Logo" class="logos">
@@ -18,7 +20,7 @@
                     <li><a href="./index.html">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#services">Services</a></li>
-                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="./menu.html">Menu</a></li>
                     <li><a href="./contact.html">Contact</a></li>
                 </ul>
             </nav>
@@ -30,52 +32,75 @@
             </div>
         </div>
     </header>
-   <section id="home" class="orderhero">
-        <div class="insideorder">
+
+    <!-- Hero -->
+    <section id="home" class="hero">
+        <div>
             
-            <p class="para1">Are You Hungry?</p>
-            <p class="para2">Don't Wait!</p>
-            <p class="para3">Let's start order food now</p>
+            <p class="aboutpara">ABOUT US</p>
             
         </div>
-<img src="./image/image.png" alt="">
     </section>
 
-    <div class="containers">
-  <form action="submit_order.php" method="POST">
-    <h2>Order Your Food</h2>
+    <!-- About -->
+    <section class="about" id="about">
+        <div class="aboutimage" id="scrollanimation">
+            <img src="./image/pexels-arabiclogos-453201.jpg" alt="About Image">
+        </div>
+        <div class="description" id="scrollanimation">
+            <h2 class="heading2" >.... About Us ....</h2>
+            <p class="welcomepara" >Welcome to Taplejung Restaurant</p>
+            <p >We serve delicious local and international cuisine made with fresh ingredients. Visit us to enjoy great food in a warm atmosphere.</p>
 
-    <label for="name">Your Name:</label>
-    <input type="text" id="name" name="name" required>
+            <button class="btn">Read More</button> 
 
-    <label for="phone">Phone Number:</label>
-    <input type="tel" id="phone" name="phone" required>
-
-    <label for="address">Delivery Address:</label>
-    <textarea id="address" name="address" rows="3" required></textarea>
-
-    <label for="food">Select Food Item:</label>
-    <select id="food" name="food" required>
-      <option value="">-- Choose an item --</option>
-      <option value="Steamed Mo:Mo">Steamed Mo:Mo</option>
-      <option value="Chatamari">Chatamari</option>
-      <option value="Bara">Bara</option>
-              <option value="Thakali-Thali">Thakali-Thali</option>
-
-      <option value="Dhedo set">Dheto Set</option>
-      <option value="chyang">chyang</option>
-      <option value="cake">cake</option>
-    </select>
-
-    <label for="quantity">Quantity:</label>
-    <input type="number" id="quantity" name="quantity" min="1" value="1" required>
-
+        </div>
+    </section>
     
-
-    <button type="submit" class="buttons">Place Order</button>
-  </form>
+    <!-- Team member -->
+     <h2>---Team  Member--</h2>
+     <h2>Our Master Chef</h2>
+     <div class="teammember">
+        <div class="insideteam">
+<div class="teamimage">
+    <img src="./image/ec6992e0-e643-4b79-95e5-9ae81d04a73e.jpeg" alt="">
+    <p>Ishan Shrestha</p>
+    <p>Executive Chef</p>
+    <a href=""> <i class="fa-brands fa-facebook"></i></a>
+    <a href=""><i class="fa-brands fa-instagram"></i></a>
+    </div>
 </div>
-<footer class="footer">
+<div class="insideteam">
+<div class="teamimage">
+    <img src="./image/34c0b590-33ac-419c-9dd0-6bb7a6dfd0c1.jpeg" alt="">
+    <p>Prabin Rana Magar</p>
+    <p>Pantry Chef</p>
+    <a href=""> <i class="fa-brands fa-facebook"></i></a>
+    <a href=""><i class="fa-brands fa-instagram"></i></a>
+    </div>
+</div>
+<div class="insideteam">
+<div class="teamimage">
+    <img src="./image/945fbdec-2c30-448a-acf2-941f6845b483.jpeg" alt="">
+    <p>Sajan Kumar Shrestha</p>
+    <p>Sous Chef</p>
+    <a href=""> <i class="fa-brands fa-facebook"></i></a>
+    <a href=""><i class="fa-brands fa-instagram"></i></a>
+    </div>
+</div>
+<div class="insideteam">
+<div class="teamimage">
+    <img src="./image/8467afdc-edd3-40e9-999c-e83378c156cc.jpeg" alt="">
+    <p>Nima Dandu Sherpa</p>
+    <p>Pastry Chef</p>
+    <a href=""> <i class="fa-brands fa-facebook"></i></a>
+    <a href=""><i class="fa-brands fa-instagram"></i></a>
+    </div>
+</div>
+     </div>
+
+    <!--  foooter --> 
+   <footer class="footer">
     <div class="company">
         <h1 class="heading1">Quick Links</h1>
     <ul>
@@ -97,6 +122,8 @@
                    <a href="#"><i class="fa-brands fa-youtube" id="socialmedia"></i></a>
                    <a href="#"><i class="fa-brands fa-linkedin" id="socialmedia"></i></a>
                    <a href="#"><i class="fa-brands fa-instagram" id="socialmedia"></i></a>
+                   <a href="https://github.com/Nimadandu/firstproject"><i class="fa-brands fa-github" id="socialmedia"></i></a>
+
 
                     </ul>
                 </div>
@@ -114,8 +141,8 @@
   <p>&copy; Tech Army. All Right Reserved</p>
                 
    </footer>
-   
- <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-   <script src="./script.js"></script>
+        <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+<script src="./script.js"></script>
 </body>
 </html>

@@ -36,6 +36,8 @@ html {
     height: 60px;
     width: 60px;
     border-radius: 50%;
+        /* mix-blend-mode:lighten; */
+
 }
 
 .nav-links ul {
@@ -107,7 +109,35 @@ html {
     padding: 30px;
     border-radius: 12px;
 }
+.orderhero{ 
+    background: url('./image/pexels-pixabay-258154.jpg') no-repeat top center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    margin-top: 50px;
+}
+.orderhero img{
 
+animation: imagerotate 30s infinite linear;
+
+scale: 2s;
+
+}
+@keyframes imagerotate{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+del{
+    color: black;
+}
 /* Button */
 .btn {
     background-color: orange;
@@ -629,6 +659,13 @@ i {
         font-size: 1.8rem;
     }
 }
+.insideorder p{
+    font-size: 50px;
+    font-family:cursive ;
+}
+.insideorder .para3{
+color:#e67e22;
+}
 #contactus{
     font-size: 100px;
 }
@@ -705,3 +742,30 @@ i {
         font-size: 16px;
       }
     }
+/* about */
+.aboutpara{
+    font-size: 50px;
+}
+.teammember{
+    display: flex;
+    flex-wrap: wrap;
+    padding:30px;
+    justify-content: center;
+}
+.insideteam{
+    box-shadow: 0 0 10px black;
+    border-radius: 5%;
+    width: 20%;
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+}
+.insideteame p{
+    /* text-align: center; */
+}
+.teamimage img{
+    
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
