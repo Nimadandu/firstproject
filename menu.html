@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu</title>
-    <link rel="stylesheet" href="./style.css">
+     <link rel="stylesheet" href="./style.css">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
         <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
@@ -18,7 +18,7 @@
             <nav class="nav-links">
                 <ul>
                     <li><a href="./index.html">Home</a></li>
-                    <li><a href="#about">About</a></li>
+                    <li><a href="./about.html">About</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="./menu.html">Menu</a></li>
                     <li><a href="./contact.html">Contact</a></li>
@@ -42,13 +42,13 @@
     </section>
     <section id="menu" class="menu-section">
     <div class="menu-header">
-        <h3 class="section-subtitle" >--- Our Specialties ---</h3>
-        <h2 class="section-title" >Delicious Menu</h2>
-        <div class="menu-categories">
+        <h3 class="section-subtitle" id="scrollanimation">--- Our Specialties ---</h3>
+        <h2 class="section-title" id="scrollanimation">Delicious Menu</h2>
+        <div class="menu-categories" id="scrollanimation">
             <button class="category-btn active" data-category="all">All Items</button>
             <button class="category-btn" data-category="starters">Starters</button>
             <button class="category-btn" data-category="mains">Main Courses</button>
-            <button class="category-btn" data-category="drinks"><i class="fa fa-mug-hot"></i>Drinks</button>
+            <button class="category-btn" data-category="drinks">Drinks</button>
             <button class="category-btn" data-category="desserts">Desserts</button>
         </div>
     </div>
@@ -61,7 +61,7 @@
                 <div class="menu-item" id="scrollanimation">
                     <div class="item-image">
                         <img src="./image/MOMO.png" alt="Momo">
-                        <span class="item-price">Rs. 250</span>
+                        <span class="item-price">Rs. 150 <del>200</del></span>
                     </div>
                     <div class="item-info">
                         <h4>Steamed Momo</h4>
@@ -79,7 +79,7 @@
                 <div class="menu-item" id="scrollanimation">
                     <div class="item-image">
                         <img src="./image/Chatamari.png" alt="Chatamari">
-                        <span class="item-price">Rs. 200</span>
+                        <span class="item-price">Rs. 190 <del>240</del></span>
                     </div>
                     <div class="item-info">
                         <h4>Chatamari</h4>
@@ -97,7 +97,7 @@
                 <div class="menu-item" id="scrollanimation">
                     <div class="item-image">
                         <img src="./image/Newari-Bara.png" alt="Wo">
-                        <span class="item-price">Rs. 180</span>
+                        <span class="item-price">Rs. 120 <del>170</del></span>
                     </div>
                     <div class="item-info">
                         <h4>Wo (Bara)</h4>
@@ -121,7 +121,7 @@
                 <div class="menu-item" id="scrollanimation">
                     <div class="item-image">
                         <img src="./image/Thakali-Thali.png" alt="Thakali Thali">
-                        <span class="item-price">Rs. 450</span>
+                        <span class="item-price">Rs. 380 <del>430</del></span>
                     </div>
                     <div class="item-info">
                         <h4>Thakali Thali</h4>
@@ -139,7 +139,7 @@
                 <div class="menu-item" id="scrollanimation">
                     <div class="item-image">
                         <img src="./image/Gundruk.png" alt="Dhedo">
-                        <span class="item-price">Rs. 350</span>
+                        <span class="item-price">Rs. 300 <del>350</del></span>
                     </div>
                     <div class="item-info">
                         <h4>Dhedo Set</h4>
@@ -157,7 +157,7 @@
                 <div class="menu-item" id="scrollanimation">
                     <div class="item-image">
                         <img src="./image/sukuti.png" alt="Sukuti">
-                        <span class="item-price">Rs. 400</span>
+                        <span class="item-price">Rs. 150 <del>200</del></span>
                     </div>
                     <div class="item-info">
                         <h4>Sukuti Tarkari</h4>
@@ -181,7 +181,7 @@
                 <div class="menu-item" id="scrollanimation">
                     <div class="item-image">
                         <img src="./image/tongba.png" alt="Chyang">
-                        <span class="item-price">Rs. 150</span>
+                        <span class="item-price">Rs. 200 <del>250</del></span>
                     </div>
                     <div class="item-info">
                         <h4>Chyang (Tongba)</h4>
@@ -199,7 +199,7 @@
                 <div class="menu-item" id="scrollanimation">
                     <div class="item-image">
                         <img src="./image/lassi.png" alt="Lassi">
-                        <span class="item-price">Rs. 120</span>
+                        <span class="item-price">Rs. 80 <del>130</del></span>
                     </div>
                     <div class="item-info">
                         <h4>Sweet Lassi</h4>
@@ -295,6 +295,7 @@
         </div>
     </div>
 </section>
+ 
   <footer class="footer">
     <div class="company">
         <h1 class="heading1">Quick Links</h1>
@@ -335,6 +336,8 @@
                 
    </footer>
    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+   
    <script src="./script.js"></script>
+   
 </body>
 </html>

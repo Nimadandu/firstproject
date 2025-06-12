@@ -747,25 +747,39 @@ color:#e67e22;
     font-size: 50px;
 }
 .teammember{
-    display: flex;
+     display: flex;
     flex-wrap: wrap;
-    padding:30px;
     justify-content: center;
+    gap: 30px;
+    padding: 40px 20px;
 }
+@media screen and (max-width:480px){
+    .teammember{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 .insideteam{
-    box-shadow: 0 0 10px black;
-    border-radius: 5%;
-    width: 20%;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0,0,0,1);
     text-align: center;
-    padding: 20px;
-    margin: 20px;
+    padding: 30px;
+    width: 300px;
+    
+
 }
-.insideteame p{
-    /* text-align: center; */
+@media  (max-width:390px)
+{
+    .insideteam{
+        width: 40%;
+    }
 }
+
 .teamimage img{
     
-    height: 200px;
-    width: 200px;
+    height: 50%;
+    width: 50%;
     border-radius: 50%;
 }
