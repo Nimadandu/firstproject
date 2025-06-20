@@ -8,7 +8,7 @@
 }
 
 html {
-    scroll-behavior: smooth;
+    scroll-behavior:smooth;
 }
 
 /* Navbar */
@@ -160,6 +160,7 @@ del{
     display: flex;
     margin-top: 10%;
     gap: 60px;
+    margin-left: 50px;
     align-items: center;
 }
 
