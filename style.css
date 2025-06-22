@@ -334,7 +334,9 @@ i {
         top: 80px;
         left: -100%;
         width: 100%;
-        background-color: rgb(94, 94, 238);
+            background-color: #0f172b;
+
+        /* background-color: rgb(94, 94, 238); */
         transition: left 0.5s ease;
         padding: 1rem 0;
     }
@@ -660,6 +662,12 @@ i {
         font-size: 1.8rem;
     }
 }
+@media(max-width:700px){
+.orderhero{
+flex-direction: column;
+}
+}
+
 .insideorder p{
     font-size: 50px;
     font-family:cursive ;
@@ -711,7 +719,6 @@ color:#e67e22;
       border-radius: 8px;
       font-size: 16px;
     }
-
     .buttons{
       margin-top: 20px;
       width: 100%;
