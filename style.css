@@ -507,7 +507,6 @@ i {
         margin: 40px auto 0;
         width: 90%;
     }
-    
    
     /* Menu  */
 .menu-section {
@@ -754,40 +753,33 @@ color:#e67e22;
 .aboutpara{
     font-size: 50px;
 }
-.teammember{
-     display: flex;
-    flex-wrap: wrap;
+.teammember-container{
+    display: flex;
+    /* width: 100%; */
     justify-content: center;
-    gap: 30px;
-    padding: 40px 20px;
-}
-@media screen and (max-width:480px){
-    .teammember{
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
-.insideteam{
-    background: white;
-    border-radius: 15px;
-    box-shadow: 0 0 15px rgba(0,0,0,1);
     text-align: center;
-    padding: 30px;
-    width: 300px;
-    
-
+    flex-wrap: wrap;
+    margin-top: 100px;
 }
-@media  (max-width:390px)
-{
-    .insideteam{
-        width: 40%;
-    }
+.team-card{
+    width: 280px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    margin-top: 5px;
+    margin: 10px;
 }
-
-.teamimage img{
+.team-card img{
+    width: 60%;
+    height: 65%;
+    padding: 20px;
+    border-radius: 50% ;
     
-    height: 50%;
-    width: 50%;
-    border-radius: 50%;
+}
+.team-content, h3, p,a{
+    padding: 3px;
+}
+.team-content a li{
+font-size: 20px;
 }
