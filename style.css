@@ -771,10 +771,12 @@ color:#e67e22;
     margin: 10px;
 }
 .team-card img{
-    width: 60%;
-    height: 65%;
-    padding: 20px;
+    width: 65%;
+    height: 60%;
+    margin: 10px;
+    padding: 3px;
     border-radius: 50% ;
+    border: 3px solid orange;
     
 }
 .team-content, h3, p,a{
