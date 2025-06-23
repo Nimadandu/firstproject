@@ -785,3 +785,7 @@ color:#e67e22;
 .team-content a li{
 font-size: 20px;
 }
+.company ul li {
+    /* color: red; */
+    padding: 5px;
+}
