@@ -123,8 +123,9 @@ html {
 .orderhero img{
 
 animation: imagerotate 30s infinite linear;
-
-scale: 2s;
+/* scale: 2s; */
+height: 300px;
+width: 300px;
 
 }
 @keyframes imagerotate{
