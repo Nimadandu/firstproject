@@ -51,7 +51,23 @@ function type(){
 
 type();
 
-type();
+// // type();
+// //contact js
+// const contactText ="Contact Us ";
+// const contactTypeText = document.getElementById('contact-text');
+// let contactIndex = 0;
+// function types(){
+//     if(contactIndex < contactText.length){
+//         contactTypeText.textContent += contactText.charAt(contactIndex);
+//         contactIndex++;
+//         setTimeout(types,150);
+//     }
+// }
+
+// types();
+
+
+
 
 // menu 
 document.addEventListener('DOMContentLoaded', function() {
