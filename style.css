@@ -36,7 +36,6 @@ html {
     height: 60px;
     width: 60px;
     border-radius: 50%;
-        /* mix-blend-mode:lighten; */
 
 }
 
@@ -597,7 +596,7 @@ i {
 }
 
 .menu-item:hover {
-    transform: translateY(-10px);
+    /* transform: translateY(-10px); */
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
 }
 
